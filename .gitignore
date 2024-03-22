@@ -1,0 +1,18 @@
+# Modules
+node_modules
+
+# Nuxt
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# IDE
+.idea
+.vscode
+
+# MacOS
+.DS_Store
