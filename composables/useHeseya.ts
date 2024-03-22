@@ -1,4 +1,4 @@
-import { HeseyaApiService } from '@heseya/store-core'
+import type { HeseyaApiService } from '@heseya/store-core'
 
 export const useHeseya = () => {
   const { $heseya } = useNuxtApp()

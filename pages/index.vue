@@ -24,8 +24,9 @@
 
 <script setup lang="ts">
 import { parsePrices } from '@heseya/store-core'
-import { useStore } from '~/store'
-import { useConfigStore } from '~/store/config';
+
+import { useStore } from '@/store/index'
+import { useConfigStore } from '@/store/config'
 
 const { t } = useI18n({
   useScope: 'local',

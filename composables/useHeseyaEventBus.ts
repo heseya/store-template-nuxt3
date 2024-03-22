@@ -1,4 +1,4 @@
-import { HeseyaEventBusService } from '@heseya/store-core'
+import type { HeseyaEventBusService } from '@heseya/store-core'
 
 export const useHeseyaEventBus = () => {
   const { $ev } = useNuxtApp()

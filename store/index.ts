@@ -1,5 +1,5 @@
-import { ProductList } from '@heseya/store-core'
 import { defineStore } from 'pinia'
+import type { ProductList } from '@heseya/store-core'
 
 export const useStore = defineStore('main', {
   state: () => ({

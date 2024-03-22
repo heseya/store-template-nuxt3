@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { enhanceAxiosWithAuthTokenRefreshing } from '@heseya/store-core'
-import type {Pinia} from 'pinia'
+import type { Pinia } from 'pinia'
 
 import { useChannelsStore } from '@/store/channels'
 import { useLanguageStore } from '@/store/language'
@@ -8,7 +8,6 @@ import { useLanguageStore } from '@/store/language'
 export default defineNuxtPlugin((nuxt) => {
   const config = usePublicRuntimeConfig()
   const ax = axios.create({ baseURL: config.apiUrl })
-
 
   const languageStore = useLanguageStore(nuxt.$pinia as Pinia)
   const channelsStore = useChannelsStore(nuxt.$pinia as Pinia)
@@ -27,8 +26,6 @@ export default defineNuxtPlugin((nuxt) => {
   })
 
   ax.interceptors.request.use((config) => {
-
-
     // @ts-ignore this $i18n exists, but it's not in the Nuxt types for some reason
     const apiLanguage = languageStore.getLanguageByIso(nuxt.$i18n.locale.value)
     if (apiLanguage && languageStore.languages.length > 0) {

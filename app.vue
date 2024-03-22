@@ -7,7 +7,6 @@
 </template>
 
 <script setup lang="ts">
-
 const runtimeConfig = usePublicRuntimeConfig()
 
 const i18nHead = useLocaleHead({
