@@ -1,5 +1,5 @@
 name: Run Eslint linter
-on: [push, tags, pull_request]
+on: [push, tag, pull_request]
 jobs:
   run:
     runs-on: ubuntu-latest
