@@ -5,10 +5,12 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 ## Boilerplate the project
 
 ```bash
-$ git clone https://gitlab.com/heseya/store/store-template-nuxt3 $PROJECT_NAME
+$ git clone git@github.com:heseya/store-template-nuxt3.git $PROJECT_NAME
 $ cd ./$PROJECT_NAME
 $ ./init.sh
 ```
+
+This will clear the repository from any history and initialize a new git repository.
 
 ## Setup
 
